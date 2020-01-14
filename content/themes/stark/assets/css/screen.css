@@ -390,13 +390,11 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
   display: block;
   padding: 12px 12px;
   color: #fff;
-  opacity: 0.8;
   transition: opacity 0.35s ease-in-out;
 }
 
 .nav li a:hover {
   text-decoration: none;
-  opacity: 1;
 }
 
 .nav li a:before {
@@ -486,11 +484,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
   display: inline-block;
   margin: 0;
   padding: 10px;
-  opacity: 0.8;
-}
-
-.social-link:hover {
-  opacity: 1;
 }
 
 .social-link svg {
@@ -522,12 +515,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
   color: #fff;
   line-height: 1em;
   border-radius: 10px;
-  opacity: 0.8;
 }
 
 .subscribe-button:hover {
   text-decoration: none;
-  opacity: 1;
 }
 
 .site-nav-right .nav + .subscribe-button {
@@ -536,11 +527,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .rss-button {
   padding: 10px 8px;
-  opacity: 0.8;
-}
-
-.rss-button:hover {
-  opacity: 1;
 }
 
 .rss-button svg {
@@ -683,13 +669,14 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-card-excerpt p {
+  line-height: 1.5em;
   margin-bottom: 1em;
 }
 
 .post-card-meta {
   display: flex;
   align-items: flex-start;
-  padding: 0;
+  padding: 8px 0 0;
 }
 
 .author-profile-image,
@@ -727,8 +714,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
   display: block;
   overflow: hidden;
   margin: 0 0 0 -6px;
-  width: 34px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
   border: #fff 2px solid;
   border-radius: 100%;
 }
@@ -772,7 +759,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
   color: color(var(--midgrey) l(+10%));
   font-size: 1.4rem;
   line-height: 1.4em;
-  font-weight: 600;
   letter-spacing: 0.2px;
 }
 
@@ -785,8 +771,9 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
   font-weight: 500;
 }
 
-.post-card-byline-date {
-  font-size: 1.2rem;
+.post-card-byline-date,
+.byline-meta-content {
+  font-size: 1.3rem;
 }
 
 .post-card-byline-date .bull {
@@ -930,6 +917,7 @@ make sure this only happens on large viewports / desktop-ish devices.
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 0.4rem;
   color: var(--midgrey);
   font-size: 1.3rem;
   line-height: 1.4em;
@@ -1003,7 +991,7 @@ make sure this only happens on large viewports / desktop-ish devices.
   padding: 0 170px 6vw;
   min-height: 230px;
   font-size: 2rem;
-  line-height: 1.6em;
+  line-height: 1.5em;
   background: #fff;
 }
 
@@ -1523,7 +1511,8 @@ Usage (In Ghost editor):
 }
 
 .post-full-byline-meta h4 a {
-  color: color(var(--midgrey) l(+10%));
+  color: color(var(--darkgrey) l(+20%));
+  font-weight: 500;
 }
 
 .post-full-byline-meta h4 a:hover {
@@ -1870,12 +1859,10 @@ Usage (In Ghost editor):
 
 .read-next .post-card-primary-tag {
   color: #fff;
-  opacity: 0.6;
 }
 
 .read-next .post-card-title {
   color: #fff;
-  opacity: 0.8;
   transition: all 0.2s ease-in-out;
 }
 
@@ -1884,7 +1871,7 @@ Usage (In Ghost editor):
 }
 
 .read-next .post-card-excerpt {
-  color: rgba(255, 255, 255, 0.6);
+  color: #fff;
 }
 
 .read-next .static-avatar {
@@ -1892,7 +1879,7 @@ Usage (In Ghost editor):
 }
 
 .read-next .post-card-byline-content {
-  color: rgba(255, 255, 255, 0.6);
+  color: #fff;
 }
 
 .read-next .post-card-byline-content a {
@@ -1924,7 +1911,7 @@ Usage (In Ghost editor):
 
 .read-next-card-header h3 {
   margin: 0;
-  color: rgba(255, 255, 255, 0.6);
+  color: #fff;
   font-size: 1.2rem;
   line-height: 1em;
   font-weight: 300;
@@ -1936,11 +1923,6 @@ Usage (In Ghost editor):
   color: #fff;
   font-weight: 700;
   text-decoration: none;
-  opacity: 0.8;
-}
-
-.read-next-card-header h3 a:hover {
-  opacity: 1;
 }
 
 .read-next-card-content {
@@ -1979,11 +1961,6 @@ Usage (In Ghost editor):
 .read-next-card-content li a {
   display: block;
   color: #fff;
-  opacity: 0.8;
-}
-
-.read-next-card-content li a:hover {
-  opacity: 1;
 }
 
 .read-next-card-excerpt {
@@ -2003,7 +1980,7 @@ Usage (In Ghost editor):
 
 .read-next-card-meta p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.6);
+  color: #fff;
 }
 
 .read-next-card-footer {
@@ -2013,8 +1990,8 @@ Usage (In Ghost editor):
 
 .read-next-card-footer a {
   padding: 7px 12px 8px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #fff;
+  color: #fff;
   font-size: 1.3rem;
   border-radius: 999px;
   transition: all 0.35s ease-in-out;
@@ -2370,7 +2347,6 @@ Usage (In Ghost editor):
   font-size: 2rem;
   line-height: 1.4em;
   font-weight: 400;
-  opacity: 0.8;
 }
 
 .author-header-content .author-meta {
@@ -2677,7 +2653,6 @@ Usage (In Ghost editor):
   font-size: 2.4rem;
   line-height: 1.3em;
   font-weight: 300;
-  opacity: 0.8;
 }
 
 .subscribe-overlay form {
@@ -2761,16 +2736,15 @@ Usage (In Ghost editor):
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 1);
   font-size: 1.3rem;
 }
 
 .site-footer-content a {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 1);
 }
 
 .site-footer-content a:hover {
-  color: rgba(255, 255, 255, 1);
   text-decoration: none;
 }
 
@@ -2942,7 +2916,7 @@ Usage (In Ghost editor):
   }
 
   .post-full-content figcaption {
-    color: rgba(255, 255, 255, 0.6);
+    color: #fff;
   }
 
   .post-full-content table td:first-child {
@@ -3015,7 +2989,7 @@ Usage (In Ghost editor):
   }
 
   .subscribe-form p {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 1);
   }
 
   .subscribe-email {
